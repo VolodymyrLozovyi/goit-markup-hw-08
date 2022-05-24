@@ -1,0 +1,116 @@
+.portfolio-buttons {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-button {
+    margin-right: 8px;
+    &:last-child {
+    margin-right: 0px;
+}
+}
+
+.portfolio-btn {
+    font-family:inherit; 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: var(--background-light-color);
+    color: var(--nav-color);
+    padding: 6px 22px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color var(--trans-duration) var(--trans-func), color var(--trans-duration) var(--trans-func), box-shadow var(--trans-duration) var(--trans-func) ;
+    &:hover,
+    &:focus {
+    background-color: var(--accent-color);
+    color: var(--background-light-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-descr {
+    padding-left: 24px;
+    padding-top: 20px ;
+    padding-bottom: 20px ;
+    padding-right: 24px ;
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.portfolio-list {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    max-width: 370px;
+    &:nth-child(3n) {
+    margin-right: 0px;
+}
+    &:nth-last-child(-n+3) {
+    margin-bottom: 0px;
+}
+}
+
+.portfolio-link:hover .portfolio-top-text {
+    transform: translateY(0%);
+}
+
+.portfolio-link {
+    display: block;
+    transition: box-shadow var(--trans-duration) var(--trans-func);
+    &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+    &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+}
+
+.portfolio-top-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-top-text {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    padding-top: 63px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+    padding-right: 24px;
+    color: var(--text-light-color);
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform var(--trans-duration) var(--trans-func), box-shadow var(--trans-duration) var(--trans-func) ;
+    overflow: auto;
+}
+
+
+
+.portfolio-item-title{
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+    margin-bottom: 4px;
+}
+
+.portfolio-item-text{
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}

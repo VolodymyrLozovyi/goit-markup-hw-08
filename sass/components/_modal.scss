@@ -1,0 +1,192 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    transition: opacity var(--trans-duration) var(--trans-func), visibility var(--trans-duration) var(--trans-func);
+}
+
+.backdrop.is-hidden .modal {
+    transform: scale(0.2);
+}
+
+.modal {
+    width: 528px;
+    min-height: 581px;
+    background: var(--background-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    position: absolute;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    transition: transform var(--trans-duration) var(--trans-func);
+    transform: translate(-50%, -50%); scale:(1) ;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: center;
+    &:hover, 
+    &:focus {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
+}
+}
+
+.modal-close-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #000000;
+    transform: translate(-50%, -50%);
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    margin-bottom: 12px;
+}
+
+.madal-field {
+    margin-bottom: 10px;
+    &:last-child {
+    margin-bottom: 20px;
+}
+}
+
+.modal-input {
+    width: 448px;
+    height: 40px;
+    border: 1px solid var(--border-input-color);
+    border-radius: 4px;
+    padding-left: 42px;
+    outline: none;
+    transition: border var(--trans-duration) var(--trans-func) ;
+    &:focus {
+    border: 1px solid var(--accent-color);
+}
+&:focus + .input-icon {
+    fill: var(--accent-color);
+}
+}
+
+.modal-input-wrap {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill var(--trans-duration) var(--trans-func) ;
+}
+
+.modal-label {
+    font-size: 12px;
+    line-height: 1.15;
+    letter-spacing: 0.01em;
+    color: var(--text-color);
+}
+.modal-text {
+    width: 100%;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--placeholder-color);
+    height: 120px;
+    border: 1px solid var(--placeholder-color);
+    border-radius: 4px;
+    padding: 16px;
+    /* margin-bottom: 20px; */
+    resize: none;
+    outline: none;
+    &:focus {
+    border: 1px solid var(--accent-color);
+}
+}
+
+.check-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::before {
+    content: '';
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--nav-color);
+    margin-right: 8px;
+    border-radius: 2px;
+    transition: border-color var(--trans-duration) var(--trans-func) ;
+}
+}
+
+.input-check:checked + .check-text::before {
+    background-color: var(--accent-color);
+    border: none;
+    background-image: url(../images/icon-checked.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.input-check:focus + .check-text::before,
+.input-check:hover + .check-text::before {
+    border-color: var(--accent-color);
+}
+
+.policy {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: var(--accent-color);
+    padding-left: 4px;
+}
+
+.madal-submit {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--text-light-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    border: none;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.madal-button {
+    margin-top: 30px;
+}

@@ -1,0 +1,20 @@
+@import "./utils/variables";
+@import "./utils/reset";
+@import "./utils/body";
+@import "./utils/hiden";
+@import "./utils/container";
+
+
+
+
+@import "./components/header";
+// bam-start//
+@import "./components/hero";
+@import "./components/benefits";
+//bam-end//
+@import "./components/specialization";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/portfolio";
+@import "./components/modal";
