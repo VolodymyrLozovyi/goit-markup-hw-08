@@ -12,7 +12,7 @@
 }
 
 .modal {
-    width: 528px;
+    width: 450px;
     min-height: 581px;
     background: var(--background-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -23,6 +23,18 @@
     left: 50%;
     transition: transform var(--trans-duration) var(--trans-func);
     transform: translate(-50%, -50%); scale:(1) ;
+    @media screen and (max-width: 479px) {
+      width: 90%;
+      min-height: 609px;
+  }
+    @media screen and (min-width: 480px) {
+      width: 450px;
+      min-height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+}
 }
 
 .modal-close-btn {
@@ -74,7 +86,7 @@
 }
 
 .modal-input {
-    width: 448px;
+    width: 100%;
     height: 40px;
     border: 1px solid var(--border-input-color);
     border-radius: 4px;
@@ -117,7 +129,7 @@
     border: 1px solid var(--placeholder-color);
     border-radius: 4px;
     padding: 16px;
-    /* margin-bottom: 20px; */
+    
     resize: none;
     outline: none;
     &:focus {
@@ -134,6 +146,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
     &::before {
     content: '';
     width: 16px;
@@ -167,6 +184,11 @@
     text-decoration-line: underline;
     color: var(--accent-color);
     padding-left: 4px;
+    @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
 }
 
 .madal-submit {
