@@ -1,5 +1,13 @@
+.specialization {
+    display: none;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+
+}
 .specialization__items {
     display: flex;
+    
 }
 
 
