@@ -1,0 +1,103 @@
+.mailing {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-label {
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $hero-color--logo-white;
+
+    margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
+}
+
+.input-button {
+    display: flex;
+    align-items: center;
+    @media screen and (min-width: 0) and (max-width: (1200px - 0.02)) {
+        flex-direction: column;
+    }  
+}
+
+.mailing__in {
+    width: 100%;
+    padding: 15px 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    background-color: $background-hero--background-footer;
+
+    @media screen and (min-width: 768px) and (max-width: (1200px - 0.02)){
+        max-width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-right: 12px;
+    }
+}
+
+.mailing__input {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+    &::placeholder {
+        @extend .mailing__input;
+    }
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    }
+}
+
+.mail-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 28px 10px 29px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    max-width: 350px;
+    min-width: 200px;
+
+    color: $hero-color--logo-white;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.88;
+
+    letter-spacing: 0.06em;
+    background-color: $logo-blue--hover-color;
+    cursor: pointer;
+
+    transition: background-color 250ms $cubic;
+
+    &:hover,
+    &:focus {
+        background-color: $background-hover-batton;
+    }
+}
+
+.mail-icon {
+    fill: currentColor;
+}

@@ -1,0 +1,74 @@
+.contacts {
+
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        margin-left: 84px;
+    }
+
+    @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+    }
+
+    &__mail {
+        @media screen and (min-width: 768px) and (max-width: (1200px - 0.02)) {
+            margin-bottom: 10px;
+        }
+
+        
+    }
+
+
+    &__tel {
+
+
+        @media screen and (min-width: 1200px){
+            margin-left: 30px;
+        }
+       
+    }
+    
+    &__icon {
+        margin-right: 8px;
+        fill: currentColor;
+
+        @media screen and (min-width: 768px) and (max-width: (1200px - 0.02)) {
+            max-width: 14px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-right: 10px;
+
+        }
+           
+    }
+}
+
+.contacts__link {
+    display: flex;
+    align-items: center;
+    color: $text-paragraph--contact-link;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms $cubic;
+
+    &:hover,
+    &:focus {
+        color: $logo-blue--hover-color;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        font-size: 14px;
+
+    }
+}

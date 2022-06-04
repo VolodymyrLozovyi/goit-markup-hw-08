@@ -1,20 +1,39 @@
+// variables
 @import "./utils/variables";
-@import "./utils/reset";
-@import "./utils/body";
-@import "./utils/hiden";
-@import "./utils/container";
 
+// utils
+@import "./utils/visually-hidden";
+@import "./utils/mixins";
 
+// base
+@import "./base/reset";
+@import "./base/base";
 
+// conponents
+@import "./components/container";
 
-@import "./components/header";
-// bam-start//
-@import "./components/hero";
-@import "./components/benefits";
-//bam-end//
-@import "./components/specialization";
-@import "./components/team";
-@import "./components/clients";
-@import "./components/footer";
+// //main page
+// //header
+@import "./components/header/header";
+@import "./components/header/logotype";
+@import "./components/header/mobil-menu";
+@import "./components/header/navigation";
+@import "./components/header/contacts";
+
+// //main
+@import "./components/main/hero";
+@import "./components/main/benefits";
+@import "./components/main/our-work";
+@import "./components/main/work-team";
+@import "./components/main/our-team";
+@import "./components/main/clients";
+
+// //footer
+@import "./components/footer/footer";
+@import "./components/footer/form-mail";
+
+// //modal window
+@import "./components/modal-window";
+
+// //portfolio
 @import "./components/portfolio";
-@import "./components/modal";

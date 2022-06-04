@@ -1,0 +1,114 @@
+.hero {
+    padding: 118px 0;
+    min-width: 320px;
+    max-width: 767px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: $background-hero--background-footer;
+    background-size: cover;
+    background-position: center;
+    
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/background/hero_bg_s.jpg);
+
+
+    @include mq(retina) {
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/background/hero_bg_s@2x.jpg);
+    }
+
+
+    @media screen and (min-width: 768px) {
+        max-width: 1199px;
+
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/background/hero_bg_m.jpg);
+
+        @include mq(retina) {
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/background/hero_bg_m@2x.jpg);
+        }
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 200px 0;
+        max-width: 1600px;
+
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/background/hero_bg_l.jpg);
+        
+        @include mq(retina) {
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/background/hero_bg_l@2x.jpg);
+        }
+    }
+
+
+}
+
+.hero-txt {
+    max-width: 360px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+    color: $hero-color--logo-white;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+
+    
+    @media screen and (min-width: 1200px) {
+    max-width: 696px;
+
+    font-size: 44px;
+    }
+
+}
+
+.hero-button {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    max-width: 350px;
+    min-width: 200px;
+
+    font-family: $main-font;
+    color: $hero-color--logo-white;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: $logo-blue--hover-color;
+    cursor: pointer;
+
+    transition: background-color 250ms $cubic;
+
+    &:hover,
+    &:focus {
+        background-color: $background-hover-batton;
+    }
+}

@@ -1,23 +1,18 @@
-:root{
-    --title-color: #212121;
-    --text-color: #757575;
-    --icon-color: #AFB1B8;
-    --text-light-color: #ffffff;
-    --nav-color: #212121;
-    --logo-header-color: #000000;
-    --logo-footer-color: #ffffff;
-    --accent-color: #2196F3;
-    --background-dark-color: #2F303A;
-    --background-light-color: #F5F4FA;
-    --background-white-color: #ffffff;
-    --footer-color: #ffffff;
-    --footer-link-color: rgba(255, 255, 255, 0.6);
-    --join-link-bg-color: rgba(255, 255, 255, 0.1);
-    --border-color: #EEEEEE;
-    --border-header-color: #ECECEC;
-    --typical-padding: 60px;
-    --trans-duration: 250ms;
-    --trans-func: cubic-bezier(0.4, 0, 0.2, 1);
-    --border-input-color: rgba(33, 33, 33, 0.2);
-    --placeholder-color: rgba(117, 117, 117, 0.5);
-}
+    /* fonts */
+    $main-font: 'Roboto', sans-serif;
+    $logo-font: 'Raleway', sans-serif;
+    /* color fonts */
+    $primary-txt: #212121;
+    $logo-blue--hover-color: #2196f3;
+    $hero-color--logo-white: #ffffff;
+    $text-paragraph--contact-link: #757575;
+    $link-text: #ffffff99;
+    /* background-color */
+    $background-main: #ffffff;
+    $background-hero--background-footer: #2f303a;
+    $background-team: #f5f4fa;
+    $background-hover-batton: #188ce8;
+    /* icons-color */
+    $icon-socials-team: #afb1B8;
+    /* animatoins */
+    $cubic: cubic-bezier(0.4, 0, 0.2, 1);
